@@ -1,0 +1,40 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Welcome | Blood Donation</title>
+    <link rel="stylesheet" href="{% static  'css/style.css'%}">
+
+  </head>
+  <body>
+    <header>
+      <div class="logo-container">
+        <img src="{% static  'images/blood-drop-svgrepo-com.svg' %}" alt="logo">
+        <a class="home_link" href="#"><h4 class="logo" >WeCare Hospital</h4></a>
+      </div>
+      <nav>
+        <ul class="nav-links">
+          <li ><a class="nav-link" href="#">Home</a></li>
+          <li ><a class="nav-link" href="#">Our services</a></li>
+          <li ><a class="nav-link" href="#">About</a></li>
+          <li ><a class="nav-link" href="#">Contact</a></li>
+
+        </ul>
+      </nav>
+
+    </header>
+
+    <main>
+      {% block content %}
+
+      {% endblock %}
+    </main>
+
+    <div class="wave">
+      <img src="{% static 'images/wave.svg' %}" alt="wave">
+    </div>
+
+  </body>
+</html>

@@ -1,0 +1,201 @@
+header{
+  display: flex;
+  width:90%;
+  margin: auto;
+  }
+.logo-container,
+.nav-links{
+  display: flex;
+}
+.logo-container{
+  flex:2;
+}
+.logo{
+  font-size: 4vh;
+  font-weight: 600;
+  margin:5px;
+  color: #F44545;
+}
+.home_link{
+  text-decoration: none;
+}
+.logo-container img{
+height: 6vh;
+width: 4vw;
+}
+nav{
+  flex:2
+}
+.nav-links{
+  justify-content: space-around;
+  list-style: none;
+}
+.nav-link{
+  color: #595555;
+  font-size: 23px;
+  font-weight: 500;
+  text-decoration: none;
+}
+.nav-link:hover{
+  background: #595555;
+  color:white;
+}
+.presentation{
+  display: flex;
+  width: 90%;
+  margin: auto;
+  min-height: 80vh;
+}
+.introduction{
+  flex:1;
+  margin-top: 20vh;
+}
+.intro-text h1{
+  font-size: 44px;
+  font-weight: 500;
+  color: #595555;
+  animation: side 2.5s ease;
+}
+
+.intro-text p{
+  margin-top: 5px;
+  font-size: 22px;
+  color:grey;
+
+}
+.cta{
+  padding: 50px 0px 0px 0px;
+}
+.appointment{
+  border: 2px solid #F44545;
+  background: transparent;
+  color:red;
+  width: 150px;
+  height:50px;
+  cursor: pointer;
+  font-size: 16px;
+}
+.login{
+  background: #F44545;
+  width: 150px;
+  height:50px;
+  font-size: 16px;
+  border:none;
+  margin-left: 30px;
+  color:white;
+  cursor: pointer;
+  margin: 10px 0px 0px 30px;
+}
+.login a{
+  text-decoration:none;
+  color:white;
+  cursor: pointer;
+}
+.doctor{
+  flex:1;
+  display: flex;
+  justify-content: center;
+  z-index: -1;
+}
+.doctor img{
+  width: 25vw;
+  height: 50vh;
+  animation: drop 1.5s ease;
+}
+.authenticationsvg{
+  flex:1;
+  display: flex;
+  justify-content: center;
+  z-index: -1;
+}
+.authenticationsvg img{
+  width: 30vw;
+  height: 60vh;
+  animation: drop 1.5s ease;
+}
+
+.wave{
+  position: absolute;
+  bottom: 0;
+  right:0;
+  z-index: -1;
+}
+.wave img{
+  width: 80vw;
+}
+@keyframes drop {
+  0%{
+    opacity: 0;
+    transform: translateY(-80px);
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+/* -------------------------login page css start ------------------ */
+.form{
+  width: 80%;
+  margin: auto;
+}
+.form label{
+  color:#F44545;
+  font-size: 25px;
+}
+.form input[type=text]{
+margin-bottom: 20px;
+margin-top: 10px;
+width:80%;
+padding: 15px;
+border-radius:5px;
+border:1px solid #F44545;
+}
+.form input[type=password]{
+margin-bottom: 20px;
+margin-top: 10px;
+width:80%;
+padding: 15px;
+border-radius:5px;
+border:1px solid #F44545;
+}
+.form select{
+  margin-bottom: 20px;
+  margin-top: 10px;
+  width:75%;
+  padding: 15px;
+  border-radius:5px;
+  border:1px solid #F44545;
+
+}
+
+@keyframes side {
+  0%{
+    opacity: 0;
+    transform: translateX(-80px);
+  }
+  100%{
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+@media screen and (max-width: 1024px) {
+  .presentation{
+    flex-direction: column;
+  }
+  .introduction{
+    margin-top: 5vh;
+    text-align: center;
+  }
+  .wave{
+    display: none;
+  }
+  .logo-container img{
+  height: 8vh;
+  width: 8vw;
+  }
+  .doctor img{
+    width: 75vw;
+    height: 50vh;
+    animation: drop 1.5s ease;
+  }
+}

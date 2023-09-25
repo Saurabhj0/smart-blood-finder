@@ -1,0 +1,29 @@
+{% extends "main.html" %}
+{% load static %}
+{% block content %}
+<section class="presentation">
+  <div class="introduction">
+      <div class="form">
+        <form class="" action="" method="POST">
+          <label for="">UserID:</label><br>
+          <input type="text" name="name" value="" placeholder="Enter Username"> <br>
+          <label for="">Password:</label><br>
+          <input type="password" name="password" value="" placeholder="Enter Password">
+          <br>
+          <label for="">Role:</label>
+          <select name="Role" id="role">
+            <option value="volvo">Doctor</option>
+            <option value="saab">Patient</option>
+            <option value="mercedes">Manager</option>
+            <option value="audi">Receptionist</option>
+          </select>
+          <br>
+          <button class="login" type="submit" name="submit">SUBMIT</button>
+        </form>
+      </div>
+  </div>
+  <div class="authenticationsvg">
+    <img src="{% static  'images/undraw_authentication_fsn5.svg' %}" alt="Doctors">
+  </div>
+</section>
+{% endblock %}
